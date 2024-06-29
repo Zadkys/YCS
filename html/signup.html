@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>¡Registrate!</title>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<!-- css file -->
+	<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="signup-login">
+	<!-- header section start -->
+	<header>
+		<input type="checkbox" id="toggler">
+		<label for="toggler" class="fas fa-bars"></label>
+
+		<a href="../index.php" class="logo"><img src="../img/decorations/YCS.png" alt=""></a>
+
+		<nav class="navbar">
+			<a href="../index.php">Inicio</a>
+			<a href="../php/products.php">productos</a>
+			<a href="login.html">log in</a>
+		</nav>
+	</header>
+<!-- header section end -->
+
+<!-- signup section start -->
+	<section class="form">
+		<div class="container">
+			<form action="../php/signup.php" method="post">
+				<h1>sign up</h1>
+				<div class="input-box">
+					<input type="text" name="user-name" placeholder="Nombre" required>
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="input-box">
+					<input type="text"  name="user-surname" placeholder="Apellido(s)" required>
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="input-box">
+					<input type="email" name="user-mail" placeholder="Correo electrónico" required>
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="input-box">
+					<input type="password"  name="user-psw" placeholder="Contraseña" required>
+					<i class="fas fa-lock"></i>
+				</div>
+
+				<button type="submit" class="btn">Crear cuenta</button>
+
+				<div class="login-link">
+					<p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+				</div>
+			</form>
+		</div>
+	</section>
+<!-- signup section end -->
+</body>
+</html>
