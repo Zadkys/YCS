@@ -27,7 +27,7 @@ $rUsr = mysqli_fetch_array($usr);
 
 $_SESSION['correo'] = $rUsr['correo'];
 
-$prod = mysqli_query($con, "SELECT * FROM productos WHERE modelo = 'Risk'");
+$prod = mysqli_query($con, "SELECT * FROM productos WHERE modelo = ''");
 $rprod = mysqli_fetch_array($prod);
 
 require('../fpdf/fpdf.php');
